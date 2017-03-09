@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue.js demo</title>
+  </head>
+  <body>
+    <div id="exam">
+      <p>Message: {{ msg }}</p>
+      <input v-model="msg">
+    </div>
+    <div id="never">
+      <p id="never" v-once>This will never change: {{ msg }}</p>
+      <input v-model="msg">
+    </div>
+    <script src="js/vue.min.js"></script>
+    <script src="js/template.js"></script>
+  </body>
+</html>
