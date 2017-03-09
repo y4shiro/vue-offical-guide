@@ -20,6 +20,14 @@
       <p v-if="seen">Now you see me</p>
     </div>
     <br>
+    <div id="app4">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+    <br>
     <script src="js/vue.min.js"></script>
     <script src="js/index.js"></script>
   </body>
