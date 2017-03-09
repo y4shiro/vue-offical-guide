@@ -10,8 +10,23 @@
       <input v-model="msg">
     </div>
     <div id="never">
-      <p id="never" v-once>This will never change: {{ msg }}</p>
+      <p  v-once>This will never change: {{ msg }}</p>
       <input v-model="msg">
+    </div>
+    <div id="raw" v-html="msg">
+      <p>raw: {{ msg }}</p>
+    </div>
+    <div id="bind" v-bind:test="t"></div>
+    <button id="bool" v-bind:disabled="t">disabled button</button>
+    <button id="bool" v-bind:disabled="f">abled button</button>
+    <div id="ref">
+      <a v-bind:href="url">link</a>
+      <br>
+      <input v-model="url">
+    </div>
+    <div id="click">
+      <p>{{ msg }}</p>
+      <button v-on:click="isClick">button</button>
     </div>
     <script src="js/vue.min.js"></script>
     <script src="js/syntax.js"></script>
