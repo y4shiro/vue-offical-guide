@@ -1,0 +1,7 @@
+{
+  extends: ["vue" /* your usual extends */ ],
+  plugins: ["html","vue"],
+  rules: {
+    'vue/jsx-uses-vars': 2,
+  },
+}
