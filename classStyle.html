@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue.js demo</title>
+  </head>
+  <body>
+    <div id="vm1" v-bind:class="{ acitive: isActive }">
+    </div>
+    <div id="vm2" class="static"
+       v-bind:class="{ active: isActive, 'text-danger': hasError }">
+    </div>
+    <div id="vm3" v-bind:class="classObject">
+      {{ classObject }}
+    </div>
+    <div id="vm4" v-bind:class="classObject">
+      {{ classObject }}
+    </div>
+    <div id="vm5" v-bind:class="[activeClass, errorClass]">
+    </div>
+    <div id="vm6" v-bind:class="[isActive ? activeClass : '', errorClass]">
+    </div>
+    <div id="vm7" v-bind:class="[{ active: isActive }, errorClass]">
+    </div>
+    <my-component class="baz boo"></my-component>
+    <script src="js/vue.min.js"></script>
+    <script src="js/classStyle.js"></script>
+  </body>
+</html>
