@@ -5,11 +5,22 @@
     <title>Vue.js demo</title>
   </head>
   <body>
-    <div id="demo">
+    <div id="app">
       <p>{{message}}</p>
       <input v-model="message">
     </div>
+    <br>
+    <div id="app2">
+      <span v-bind:title="message">
+        {{message}}
+      </span>
+    </div>
+    <br>
+    <div id="app3">
+      <p v-if="seen">Now you see me</p>
+    </div>
+    <br>
     <script src="js/vue.min.js"></script>
-    <script src="js/demo.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
