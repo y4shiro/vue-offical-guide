@@ -5,6 +5,16 @@
     <title>Vue.js demo</title>
   </head>
   <body>
+  <div id="example">
+    <p>Original message: "{{ message }}"</p>
+    <p>Computed reversed  message: "{{ reversedMessage }}"</p>
+    <p>Reversed  message: "{{ reverseMessage() }}"</p>
+  </div>
+  <div id="watch">
+    <p>{{ fullName }}</p>
+    <input v-model="firstName">
+    <input v-model="lastName">
+  </div>
     <script src="js/vue.min.js"></script>
     <script src="js/computed.js"></script>
   </body>
