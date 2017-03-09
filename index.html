@@ -10,22 +10,27 @@
       <input v-model="message">
     </div>
     <br>
-    <div id="app2">
+    <div id="app-2">
       <span v-bind:title="message">
         {{message}}
       </span>
     </div>
     <br>
-    <div id="app3">
+    <div id="app-3">
       <p v-if="seen">Now you see me</p>
     </div>
     <br>
-    <div id="app4">
+    <div id="app-4">
       <ol>
         <li v-for="todo in todos">
           {{ todo.text }}
         </li>
       </ol>
+    </div>
+    <br>
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
     </div>
     <br>
     <script src="js/vue.min.js"></script>
