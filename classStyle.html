@@ -22,7 +22,17 @@
     </div>
     <div id="vm7" v-bind:class="[{ active: isActive }, errorClass]">
     </div>
-    <my-component class="baz boo"></my-component>
+    <div id="vm8">
+      <my-component class="baz boo"></my-component>
+      <my-component v-bind:class="{ active: isActive }"></my-component>
+    </div>
+    <div id="vm9">
+      <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }">vm9</div>
+      <div v-bind:style="styleObject">vm9</div>
+    </div>
+    <div id="vm10">
+      <div v-bind:style="[baseStyles, overridingStyles]">vm10</div>
+    </div>
     <script src="js/vue.min.js"></script>
     <script src="js/classStyle.js"></script>
   </body>

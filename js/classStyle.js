@@ -66,6 +66,39 @@ let vm7 = new Vue({
   }
 })
 
-let vm8 = Vue.component('my-component', {
-  templage: '<p class="foo bar">Hi</p>'
+Vue.component('my-component', {
+  template: '<p class="foo bar">Hi</p>'
+})
+
+let vm8 = new Vue({
+  el: '#vm8',
+  data: {
+    isActive: true
+  }
+})
+
+let vm9 = new Vue({
+  el: '#vm9',
+  data: {
+    activeColor: 'red',
+    fontSize: 30,
+    styleObject: {
+      color: 'red',
+      fontSize: '13px'
+    }
+  }
+})
+
+let vm10 = new Vue({
+  el: '#vm10',
+  data: {
+    baseStyles: {
+      color: 'red',
+      fontSize: '13px'
+    },
+    overridingStyles: {
+      color: 'blue',
+      fontSize: '23px'
+    }
+  }
 })
